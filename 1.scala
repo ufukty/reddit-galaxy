@@ -66,4 +66,4 @@ val degrees = spark.sql("""
 """)
 degrees.cache
 degrees.show
-top_targets.write.mode("overwrite").json("spark_output/degrees")
+degrees.write.mode("overwrite").json("spark_output/degrees")
